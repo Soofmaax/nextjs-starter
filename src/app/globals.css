@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f5f7;
-  --foreground: #111827;
+  --background: #f3f4f6;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -27,8 +27,8 @@ body {
 }
 
 .prose {
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
 .prose h1,

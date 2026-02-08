@@ -23,17 +23,27 @@ export function ArticleCard({ href, title, date, category, excerpt }: ArticleCar
   const formattedDate = formatDate(date);
 
   return (
-    <article className="group rounded-xl border border-slate-200 bg-white/80 p-4 transition duration-150 hover:border-slate-300 hover:bg-white">
-      <div className="flex flex-col gap-2">
+    <article className="group relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm transition-transform duration-150 hover:-translate-y-1 hover:border-slate-300 hover:shadow-md">
+      <div className="flex h-full flex-col gap-3">
         <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
-          {category && <span className="font-medium uppercase tracking-[0.18em]">{category}</span>}
-          {formattedDate && <time dateTime={date ?? undefined}>{formattedDate}</time>}
+          {category && (
+            <span className="inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-sky-800 ring-1 ring-sky-100">
+              {category}
+            </span>
+          )}
+          {formattedDate && (
+            <time dateTime={date ?? undefined} className="text-xs text-slate-500">
+              {formattedDate}
+            </time>
+          )}
         </div>
-        <h2 className="text-base font-semibold text-slate-900 group-hover:text-slate-950">
+        <h2 className="text-base font-semibold tracking-tight text-slate-900 group-hover:text-slate-950">
           <Link href={href}>{title}</Link>
         </h2>
         {excerpt && (
-          <p className="text-sm text-slate-600 line-clamp-3">{excerpt}</p>
+          <p className="text-sm leading-relaxed text-slate-600 line-clamp-3">
+            {excerpt}
+          </p>
         )}
       </div>
     </article>

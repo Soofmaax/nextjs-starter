@@ -13,7 +13,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
   return (
-    <header className="mb-8 border-b border-slate-200 pb-6">
+    <header className="mb-10 border-b border-slate-200/80 pb-7 sm:mb-12 sm:pb-8">
       {breadcrumb && breadcrumb.length > 0 && (
         <nav
           aria-label="Fil d&apos;ariane"
@@ -40,7 +40,7 @@ export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
         </nav>
       )}
       <div className="space-y-2">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
           {title}
         </h1>
         {subtitle && (

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { BASE_URL, siteConfig } from "@/config/site";
 import { getPageBySlug, getPostsIndex } from "@/lib/content";
-import { PageHeader } from "@/components/PageHeader";
 import { ArticleCard } from "@/components/ArticleCard";
-import { Prose } from "@/components/Prose";
 
 export const dynamic = "force-static";
 
@@ -22,20 +20,29 @@ export default async function HomePage() {
   ]);
 
   const latestPosts = postsIndex.slice(0, 3);
+  const heroTitle = page?.h1 ?? page?.title ?? "Temple Boyer Legal";
+  const heroEyebrow = page?.title ?? siteConfig.defaultTitle;
+  const heroSubtitle = page?.metaDescription ?? null;
 
   return (
     <div className="space-y-10">
-      <PageHeader
-        title={page?.h1 ?? page?.title ?? "Temple Boyer Legal"}
-        subtitle={null}
-        breadcrumb={[{ label: "Accueil" }]}
-      />
-
-      {page?.html ? (
-        <Prose html={page.html} />
-      ) : (
-        <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
-      )}
+      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-sky-700 px-6 py-10 text-slate-50 shadow-sm sm:px-10 sm:py-12 lg:px-12 lg:py-16">
+        <div className="max-w-3xl space-y-4 sm:space-y-5 lg:space-y-6">
+          {heroEyebrow && (
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200/90">
+              {heroEyebrow}
+            </p>
+          )}
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+            {heroTitle}
+          </h1>
+          {heroSubtitle && (
+            <p className="max-w-2xl text-sm leading-relaxed text-slate-200/90 sm:text-base lg:text-lg line-clamp-4">
+              {heroSubtitle}
+            </p>
+          )}
+        </div>
+      </section>
 
       {latestPosts.length > 0 && (
         <section aria-labelledby="publications-recents" className="space-y-4">
