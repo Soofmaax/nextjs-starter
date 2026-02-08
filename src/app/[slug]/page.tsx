@@ -4,6 +4,7 @@ import { BASE_URL, siteConfig } from "@/config/site";
 import { getPostBySlug, getPostsIndex } from "@/lib/content";
 import { PageHeader } from "@/components/PageHeader";
 import { Prose } from "@/components/Prose";
+import { ArticleMeta } from "@/components/ArticleMeta";
 
 interface ArticlePageProps {
   params: {
@@ -69,7 +70,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <PageHeader
         title={heading}
         subtitle={null}
@@ -80,11 +81,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         ]}
       />
 
-      {post.html ? (
-        <Prose html={post.html} />
-      ) : (
-        <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
-      )}
+      <ArticleMeta category={post.category} date={post.date} />
+
+      <div className="mx-auto max-w-3xl">
+        {post.html ? (
+          <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-sm sm:p-8">
+            <Prose html={post.html} />
+          </div>
+        ) : (
+          <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
+        )}
+      </div>
 
       <script
         type="application/ld+json"

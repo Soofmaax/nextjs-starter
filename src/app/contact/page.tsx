@@ -25,7 +25,7 @@ export default async function ContactPage() {
   const page = await getPageBySlug("contact");
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <PageHeader
         title={page?.h1 ?? page?.title ?? "Contact"}
         subtitle={null}
@@ -35,11 +35,15 @@ export default async function ContactPage() {
         ]}
       />
 
-      {page?.html ? (
-        <Prose html={page.html} />
-      ) : (
-        <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
-      )}
+      <div className="mx-auto max-w-3xl">
+        {page?.html ? (
+          <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-sm sm:p-8">
+            <Prose html={page.html} />
+          </div>
+        ) : (
+          <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
+        )}
+      </div>
     </div>
   );
 }

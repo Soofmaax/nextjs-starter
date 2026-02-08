@@ -38,7 +38,7 @@ export default async function PublicationsActualitesPage({
   const slice = posts.slice(start, end);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <PageHeader
         title="Publications & actualités"
         subtitle={null}
