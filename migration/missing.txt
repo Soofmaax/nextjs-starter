@@ -1,0 +1,7 @@
+# URLs de compétences retournant 404 détectées lors de la migration.
+# À compléter lorsque le script de migration aura été exécuté et aura identifié les pages manquantes.
+https://www.templeboyer-legal.fr/competences/droit-commercial-droit-des-societes.html	404 not found (présent dans le menu)
+https://www.templeboyer-legal.fr/competences/droit-des-nouvelles-technologies.html	404 not found (présent dans le menu)
+https://www.templeboyer-legal.fr/competences/droit-de-la-construction-ingenierie.html	404 not found (présent dans le menu)
+https://www.templeboyer-legal.fr/competences/droit-du-travail.html	404 not found (présent dans le menu)
+https://www.templeboyer-legal.fr/competences/droit-de-la-propriete-industrielle-et-intellectuelle.html	404 not found (présent dans le menu)
