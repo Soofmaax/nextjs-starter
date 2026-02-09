@@ -6,12 +6,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { Prose } from "@/components/Prose";
 import { ArticleMeta } from "@/components/ArticleMeta";
 
-interface ArticlePageProps {
-  params: {
-    slug: string;
-  };
-}
-
 export const dynamic = "force-static";
 
 export async function generateStaticParams() {
@@ -19,9 +13,10 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
+// Typage souple pour éviter les conflits avec les PageProps internes de Next 15.
 export async function generateMetadata({
   params,
-}: ArticlePageProps): Promise<Metadata> {
+}: any): Promise<Metadata> {
   const postsIndex = await getPostsIndex();
   const entry = postsIndex.find((post) => post.slug === params.slug);
 
@@ -38,7 +33,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function ArticlePage({ params }: ArticlePageProps) {
+// Même approche souple pour la page elle-même.
+export default async function ArticlePage({ params }: any) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
