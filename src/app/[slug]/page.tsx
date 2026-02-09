@@ -74,7 +74,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 sm:space-y-12">
       <PageHeader
         title={heading}
         subtitle={null}
@@ -85,11 +85,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         ]}
       />
 
-      <ArticleMeta category={post.category} date={post.date} />
+      <div className="mx-auto max-w-3xl space-y-6 sm:space-y-8">
+        <ArticleMeta category={post.category} date={post.date} />
 
-      <div className="mx-auto max-w-3xl">
         {post.html ? (
-          <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-sm sm:p-8">
+          <div className="rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] px-6 py-7 sm:px-8 sm:py-9">
             <Prose html={post.html} />
           </div>
         ) : (

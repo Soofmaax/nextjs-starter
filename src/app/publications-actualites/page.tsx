@@ -41,7 +41,7 @@ export default async function PublicationsActualitesPage({
   const slice = posts.slice(start, end);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 sm:space-y-12">
       <PageHeader
         title="Publications & actualités"
         subtitle={null}
@@ -52,10 +52,12 @@ export default async function PublicationsActualitesPage({
       />
 
       {slice.length === 0 ? (
-        <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
+        </div>
       ) : (
-        <>
-          <div className="grid gap-4 md:grid-cols-2">
+        <div className="mx-auto max-w-4xl space-y-6 sm:space-y-8">
+          <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
             {slice.map((post) => (
               <ArticleCard
                 key={post.slug}
@@ -73,7 +75,7 @@ export default async function PublicationsActualitesPage({
             total={total}
             basePath="/publications-actualites"
           />
-        </>
+        </div>
       )}
     </div>
   );

@@ -61,30 +61,89 @@ body {
 }
 
 .prose {
+  color: var(--text-main);
+  font-size: 1.0625rem;
   line-height: 1.8;
-  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .prose {
+    font-size: 1.125rem;
+    line-height: 1.9;
+  }
 }
 
 .prose h1,
 .prose h2,
 .prose h3,
 .prose h4 {
-  margin-top: 1.5em;
-  margin-bottom: 0.6em;
+  color: var(--text-main);
+}
+
+.prose h1,
+.prose h4 {
+  margin-top: 2em;
+  margin-bottom: 1.1em;
+}
+
+.prose h2,
+.prose h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1.2em;
+  font-family: var(--font-display), var(--font-geist-sans), system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .prose h2 {
+    font-size: 1.375rem;
+  }
+}
+
+.prose h3 {
+  font-size: 1.05rem;
 }
 
 .prose p {
-  margin-bottom: 0.9em;
+  margin-top: 0;
+  margin-bottom: 1.15em;
 }
 
 .prose a {
-  text-decoration: none;
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--accent);
+  transition: color 150ms ease-out, text-decoration-color 150ms ease-out;
+}
+
+.prose a:hover,
+.prose a:focus-visible {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent-strong);
 }
 
 .prose ul,
 .prose ol {
   margin-left: 1.25rem;
-  margin-bottom: 0.9em;
+  margin-bottom: 1.15em;
+  padding-left: 0.25rem;
+}
+
+.prose li + li {
+  margin-top: 0.35em;
+}
+
+.prose small,
+.prose figcaption {
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
 
 a:focus-visible,

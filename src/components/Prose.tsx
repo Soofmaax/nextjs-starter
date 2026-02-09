@@ -9,7 +9,7 @@ export function Prose({ html }: ProseProps) {
 
   return (
     <div
-      className="prose max-w-none text-slate-800"
+      className="prose max-w-none text-[var(--text-main)] leading-relaxed sm:leading-loose"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

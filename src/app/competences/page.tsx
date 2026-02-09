@@ -25,7 +25,7 @@ export default async function CompetencesPage() {
   const page = await getPageBySlug("competences");
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 sm:space-y-12">
       <PageHeader
         title={page?.h1 ?? page?.title ?? "Compétences"}
         subtitle={null}
@@ -37,7 +37,7 @@ export default async function CompetencesPage() {
 
       <div className="mx-auto max-w-3xl">
         {page?.html ? (
-          <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-sm sm:p-8">
+          <div className="rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] px-6 py-7 sm:px-8 sm:py-9">
             <Prose html={page.html} />
           </div>
         ) : (
