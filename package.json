@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "migrate:templeboyer": "ts-node scripts/migrate-templeboyer.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -23,12 +22,6 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.4",
-    "@eslint/eslintrc": "^3",
-    "ts-node": "^10.9.2",
-    "axios": "^1.7.9",
-    "cheerio": "^1.0.0",
-    "node-fetch": "^2.7.0",
-    "@types/node-fetch": "^2.6.12",
-    "@types/cheerio": "^0.22.35"
+    "@eslint/eslintrc": "^3"
   }
 }
