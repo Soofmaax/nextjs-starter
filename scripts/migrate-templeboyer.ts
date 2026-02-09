@@ -127,7 +127,7 @@ function extractMeta($: CheerioRoot): {
   return { title, metaDescription, h1 };
 }
 
-function extractMainHtml($: cheerio.CheerioAPI): string | null {
+function extractMainHtml($: CheerioRoot): string | null {
   // Heuristique prudente : on essaie les zones classiques, sinon on tombe
   // en repli sur le contenu du <body> complet.
   const mainSelectors = [
