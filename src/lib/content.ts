@@ -178,7 +178,7 @@ export async function getPostsIndex(): Promise<PostIndexEntry[]> {
     if (!parsed) continue;
 
     const data = parsed.data;
-    const slug = (data.slug || name.replace(/\.md$/, "")).trim();
+    const slug = name.replace(/\.md$/, "").trim();
 
     entries.push({
       url: (data.url ?? "").trim() || null,
@@ -231,7 +231,7 @@ export async function getPostBySlug(slug: string): Promise<MigratedPost | null> 
 
   return {
     url: (data.url ?? "").trim() || null,
-    slug: (data.slug ?? normalized).trim(),
+    slug: normalized,
     title: data.title ?? null,
     metaDescription: data.metaDescription ?? null,
     h1: data.h1 ?? null,

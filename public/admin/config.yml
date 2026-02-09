@@ -1,0 +1,126 @@
+backend:
+  # Si le site est hébergé sur Netlify, utilise git-gateway + Netlify Identity
+  # (à activer dans l’interface Netlify).
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: fr
+logo_url: "/globe.svg"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "content/pages/index.md"
+        name: "index"
+        label: "Accueil"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/le-cabinet.md"
+        name: "le-cabinet"
+        label: "Le cabinet"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/competences.md"
+        name: "competences"
+        label: "Compétences – Page d’intro"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/honoraires.md"
+        name: "honoraires"
+        label: "Honoraires"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/partenariats.md"
+        name: "partenariats"
+        label: "Partenariats / Pro Bono"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/plan-d-acces.md"
+        name: "plan-d-acces"
+        label: "Plan d’accès"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/mentions-legales.md"
+        name: "mentions-legales"
+        label: "Mentions légales"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+      - file: "content/pages/confidentialite.md"
+        name: "confidentialite"
+        label: "Confidentialité / Données personnelles"
+        fields:
+          - { name: "slug", label: "Slug", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+          - { name: "type", label: "Type", widget: "string" }
+          - { name: "title", label: "Titre (SEO)", widget: "string" }
+          - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+          - { name: "h1", label: "Titre principal (H1)", widget: "string" }
+          - { name: "body", label: "Contenu HTML", widget: "text" }
+
+  - name: "posts"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}.html"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: false
+    fields:
+      - { name: "title", label: "Titre", widget: "string" }
+      - { name: "metaDescription", label: "Méta description", widget: "text", required: false }
+      - { name: "h1", label: "Titre principal (H1)", widget: "string", required: false }
+      - { name: "date", label: "Date de publication", widget: "datetime" }
+      - { name: "category", label: "Catégorie", widget: "string", required: false }
+      - { name: "body", label: "Contenu HTML", widget: "text" }
