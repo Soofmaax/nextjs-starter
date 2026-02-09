@@ -1,5 +1,6 @@
-import { NextResponse } from "next/server";
 import { BASE_URL } from "@/config/site";
+
+export const dynamic = "force-static";
 
 export async function GET() {
   const body = [
@@ -9,7 +10,7 @@ export async function GET() {
     `Sitemap: ${BASE_URL}/sitemap.xml`,
   ].join("\n");
 
-  return new NextResponse(body, {
+  return new Response(body, {
     status: 200,
     headers: {
       "Content-Type": "text/plain; charset=utf-8",

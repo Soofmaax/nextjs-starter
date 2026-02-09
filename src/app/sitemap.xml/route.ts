@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
 import { BASE_URL } from "@/config/site";
 import { getPagesIndex, getPostsIndex } from "@/lib/content";
+
+export const dynamic = "force-static";
 
 function escapeXml(value: string): string {
   return value
@@ -44,7 +45,7 @@ export async function GET() {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlset}\n</urlset>`;
 
-  return new NextResponse(xml, {
+  return new Response(xml, {
     status: 200,
     headers: {
       "Content-Type": "application/xml; charset=utf-8",

@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
 import { BASE_URL, siteConfig } from "@/config/site";
 import { getPostsIndex } from "@/lib/content";
+
+export const dynamic = "force-static";
 
 function escapeXml(value: string): string {
   return value
@@ -41,7 +42,7 @@ export async function GET() {
       siteConfig.description,
     )}</description>\n${items}\n  </channel>\n</rss>`;
 
-  return new NextResponse(xml, {
+  return new Response(xml, {
     status: 200,
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
