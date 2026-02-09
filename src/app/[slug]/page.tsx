@@ -8,22 +8,29 @@ import { ArticleMeta } from "@/components/ArticleMeta";
 
 export const dynamic = "force-static";
 
+type ArticlePageParams = {
+  slug: string;
+};
+
+interface ArticlePageProps {
+  params: Promise<ArticlePageParams>;
+}
+
 export async function generateStaticParams() {
   const posts = await getPostsIndex();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-// Typage souple pour éviter les conflits avec les PageProps internes de Next 15.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({
   params,
-}: any): Promise<Metadata> {
+}: ArticlePageProps): Promise<Metadata> {
+  const { slug } = await params;
   const postsIndex = await getPostsIndex();
-  const entry = postsIndex.find((post) => post.slug === params.slug);
+  const entry = postsIndex.find((post) => post.slug === slug);
 
   const title = entry?.title ?? "Publication";
   const description = entry?.metaDescription ?? siteConfig.description;
-  const canonical = entry?.url ?? `${BASE_URL}/${params.slug}`;
+  const canonical = entry?.url ?? `${BASE_URL}/${slug}`;
 
   return {
     title,
@@ -34,10 +41,9 @@ export async function generateMetadata({
   };
 }
 
-// Même approche souple pour la page elle-même.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async function ArticlePage({ params }: any) {
-  const post = await getPostBySlug(params.slug);
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     notFound();
