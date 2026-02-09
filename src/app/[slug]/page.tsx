@@ -14,6 +14,7 @@ export async function generateStaticParams() {
 }
 
 // Typage souple pour éviter les conflits avec les PageProps internes de Next 15.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({
   params,
 }: any): Promise<Metadata> {
@@ -34,6 +35,7 @@ export async function generateMetadata({
 }
 
 // Même approche souple pour la page elle-même.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function ArticlePage({ params }: any) {
   const post = await getPostBySlug(params.slug);
 
