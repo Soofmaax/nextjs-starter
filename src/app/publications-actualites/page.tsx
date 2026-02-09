@@ -7,10 +7,12 @@ import { Pagination } from "@/components/Pagination";
 
 export const dynamic = "force-static";
 
+type PublicationsSearchParams = {
+  page?: string;
+};
+
 interface PublicationsActualitesPageProps {
-  searchParams?: {
-    page?: string;
-  };
+  searchParams?: Promise<PublicationsSearchParams>;
 }
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -26,7 +28,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function PublicationsActualitesPage({
   searchParams,
 }: PublicationsActualitesPageProps) {
-  const pageParam = searchParams?.page;
+  const resolvedSearchParams = searchParams ? await searchParams : undefined;
+  const pageParam = resolvedSearchParams?.page;
   const page = Number(pageParam) > 1 ? Number(pageParam) : 1;
   const pageSize = 10;
 
