@@ -1,0 +1,50 @@
+---
+slug: competences/contrats-commerciaux-et-industriels.html
+url: /competences/contrats-commerciaux-et-industriels.html
+type: category
+title: Spécialiste des contrats commerciaux et industriels
+metaDescription: Le Cabinet Temple Boyer Legal est spécialiste des contrats commerciaux et industriels, en français et en anglais, de dimension nationale ou internationale.
+h1: Spécialiste des contrats commerciaux et industriels (y compris de dimension internationale)
+---
+
+<h2>Une expertise panoramique des schémas contractuels</h2>
+<p>Notre expertise approfondie, au contact d'une clientèle très diversifiée, des schémas contractuels les plus divers nous confère une vision à la fois "panoramique" et spécifique des besoins contractuels de nos clients.</p>
+<p>Spécialiste des contrats commerciaux, notre Cabinet est en mesure d'anticiper et de suggérer des schémas contractuels complémentaires et/ou alternatifs qui s'avèrent nécessaires ou utiles pour protéger et/ou promouvoir l'activité de nos clients.</p>
+<h2>Compétences</h2>
+<ul>
+<li>Rédaction, revue et négociation (en français / anglais) de tous contrats commerciaux&nbsp;:</li>
+</ul>
+<p>En amont&nbsp;: accords de confidentialité, lettres d'intention, achat / fourniture, bail commercial, prestations de service, conditions générales d'achat...</p>
+<p>En aval&nbsp;: conditions générales de vente, distribution (exclusive, sélective, franchise, agent commercial, commissionnaire...), logistique (transport, emballage), cession et/ou licence de marque / brevet...</p>
+<ul>
+<li>Rédaction, revue et négociation (en français / en anglais) de tous contrats industriels&nbsp;:</li>
+</ul>
+<p>En amont&nbsp;: contrats EPC (engineering, procurement and construction), achat / fourniture (équipement industriel, articles de conditionnement), manufacturing, R&amp;D, transferts de technologie, contrats d'évaluation et de développement, partenariats (sous-traitance, co-traitance)...</p>
+<p>En aval&nbsp;: vente, distribution, logistique (transport, conditionnement).</p>
+<ul>
+<li>"Contract management"&nbsp;: suivi au plus près des opérationnels des contrats en cours d'exécution pour veiller au respect des milestones, anticiper les avenants nécessaires et les renouvellements...</li>
+</ul>
+<h2>Exemples d'opérations</h2>
+<ul>
+<li>Élaboration et négociation d'un contrat EPC pour un fabricant étranger de colles pour les besoins de l'extension de ses usines de production en France et à l'étranger.</li>
+<li>Élaboration du contrat-cadre de distribution exclusive d'un fabricant américain de dispositifs médicaux pour une implémentation à l'échelle mondiale.</li>
+<li>Élaboration et négociation d'un contrat-cadre de prestation de services pour la gestion et le traitement des déchets générés par un groupe industriel et l'ensemble de ses filiales européennes.</li>
+<li>Revue et négociation d'un contrat d'approvisionnement en composants stratégiques pour un industriel français avec un fournisseur leader européen dans son secteur.</li>
+<li>Assistance d'un client dans le textile de luxe dans la revue et la négociation contractuelle de l'acquisition d'un portefeuille de marques.</li>
+</ul>
+<h2>Publications liées</h2>
+<ul>
+<li>La révision du prix pour imprévision&nbsp;: faut-il toujours l'appréhender dans le contrat et si oui, comment&nbsp;? (voir la publication)</li>
+<li>La sanction pour non-respect du plafonnement des délais de paiement est relevée à 2 millions d’euros (voir la publication)</li>
+<li>Le plafonnement légal des délais de paiement dans les contrats internationaux&nbsp;: l'exemple français (voir la publication)</li>
+<li>Parties à un contrat international&nbsp;: peut-on échapper à la compétence des juridictions françaises dans un litige lié à la rupture d'une relation commerciale infligée à une société française&nbsp;? (voir la publication)</li>
+<li>Invalidation du "Safe Harbor"&nbsp;: que faire concernant les contrats en cours avec les entreprises US&nbsp;? (voir la publication)</li>
+<li>La période d’essai fait échec à l’indemnité de fin de contrat de l’agent commercial (voir la publication)</li>
+<li>Joint-venture&nbsp;: l’accord-cadre est un préalable indispensable (Impulser, septembre 2006)</li>
+<li>Joint-venture&nbsp;: PME-PMI, attention aux mariages sans précautions contractuelles (Le Moci, 19/10/06)</li>
+<li>Quelle réparation en cas de rupture fautive des pourparlers (Option Finance, 11/12/06)</li>
+<li>Sous-traitance industrielle&nbsp;: spécificités et points d’actualité (Cahiers juridiques – Journal du Vrac et Journal des Fluides, mai 2007)</li>
+<li>Sous-traitance de marché&nbsp;: les obligations réciproques (Le Moniteur, juin 2007 en deux volets)</li>
+<li>Partenariats industriels&nbsp;: savoir choisir le cadre juridique adapté (Cahiers juridiques du Journal du Vrac et du Journal des Fluides, mai-juin 2007)</li>
+<li>Rupture de relations commerciales établies&nbsp;: de l’intérêt réaffirmé de la clause attributive de juridiction dans un contrat international (voir la publication)</li>
+</ul>

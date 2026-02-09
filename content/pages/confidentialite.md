@@ -1,0 +1,66 @@
+---
+slug: confidentialite
+url: /confidentialite
+type: page
+title: Politique de confidentialité et de protection des données personnelles
+metaDescription: Politique de confidentialité du Cabinet Temple Boyer Legal : informations sur la collecte, l’utilisation, la conservation et la protection des données personnelles, ainsi que les droits des personnes concernées.
+h1: Politique de confidentialité et de protection des données personnelles
+---
+
+<h2>1. Résumé</h2>
+<p>Le Cabinet, en sa qualité de responsable du traitement, attache une grande importance à la protection et au respect de vos données personnelles et à la confidentialité de vos échanges. La présente politique vise à vous informer de nos pratiques concernant la collecte, l’utilisation et le partage des informations que vous êtes amenés à nous fournir par le biais de notre site (le "Site"). En aucun cas vos données ne pourront être transmises à des tiers à des fins commerciales et marketing.</p>
+<p>Les informations recueillies par le biais de notre Site font l’objet d’un traitement informatique destiné à la demande de contact, la prise de rendez-vous, l’établissement d’un devis ou plus généralement toute communication dans le cadre de la relation client-avocat.</p>
+<p>Le destinataire des données est Me Sarah Temple-Boyer, Avocat exerçant au 12, rue Tronchet 75008 Paris. Téléphone&nbsp;: 01 43 12 38 00.</p>
+<p>Conformément aux articles 13 et 14 du règlement (UE) général sur la protection des données 2016/679 du Parlement européen et du Conseil du 27 avril 2016 et à l’article 32 de la loi «&nbsp;informatique et libertés&nbsp;» du 6 janvier 1978 modifiée, il est précisé notamment que&nbsp;:</p>
+<ul>
+<li>Le responsable du fichier est Me Sarah Temple-Boyer. La finalité du traitement est la gestion des demandes de contact, la prise de rendez-vous ou tout échange client-avocat transitant via le site.</li>
+<li>Le destinataire est l’avocat qui est le directeur de publication de ce site, soit Me Sarah Temple-Boyer.</li>
+<li>Les données sont conservées durant 5 ans à compter du dernier échange client-avocat.</li>
+<li>Vous bénéficiez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité de vos données personnelles.</li>
+<li>Vous pouvez retirer votre consentement au traitement de vos données personnelles à tout moment en écrivant à Me Sarah Temple-Boyer.</li>
+<li>Vous pouvez introduire une réclamation auprès de la CNIL si vous estimez que la protection de vos données personnelles n’a pas été assurée.</li>
+</ul>
+<h2>2. Les informations que nous recueillons</h2>
+<h3>2.1. Les informations que vous nous transmettez directement</h3>
+<p>En utilisant notre Site, vous êtes amené à nous transmettre des informations, dont certaines sont de nature à vous identifier ("Données Personnelles"). C’est notamment le cas lorsque vous remplissez des formulaires, lorsque vous nous contactez &ndash; que ce soit par téléphone, email ou tout autre moyen de communication &ndash; ou lorsque vous nous faites part d’un problème.</p>
+<p>Ces informations peuvent contenir notamment&nbsp;:</p>
+<ul>
+<li>les données nécessaires à la prise de contact ou l’inscription aux services que nous fournissons sur notre Site ou à l’accès à tout autre service fournis par nous (nom, prénom, adresse e-mail, adresse postale, numéro de téléphone, etc.) ;</li>
+<li>le détail de vos visites sur notre Site et des contenus auxquels vous avez accédé ;</li>
+<li>les données que nous pouvons vous demander de fournir lorsque vous nous signalez un problème relatif à notre Site ou à nos services ;</li>
+<li>les données liées à votre localisation lorsque vous avez accepté que nous collections et traitions ces données.</li>
+</ul>
+<h3>2.2. Les données que nous recueillons automatiquement</h3>
+<p>Lors de chacune de vos visites, nous sommes susceptibles de recueillir, conformément à la législation applicable et avec votre accord le cas échéant, des informations relatives aux appareils sur lesquels vous utilisez nos services ou aux réseaux depuis lesquels vous accédez à nos services (adresses IP, données de connexion, type et version de navigateur, plugins, système d’exploitation, parcours de navigation sur notre Site, pages consultées, termes de recherches utilisés, erreurs de téléchargement, durée de consultation de certaines pages, identifiant publicitaire de votre appareil, interactions avec les pages, numéro de téléphone utilisé pour nous contacter, etc.).</p>
+<h3>2.3. Durée de conservation de vos données</h3>
+<p>Vos données sont conservées durant 5 ans à compter du dernier échange client-avocat.</p>
+<h2>3. Comment utilisons-nous les données que nous recueillons&nbsp;?</h2>
+<p>Nous utilisons les données que nous recueillons afin de&nbsp;:</p>
+<ul>
+<li>vous contacter pour répondre à vos demandes ;</li>
+<li>exécuter les contrats conclus entre vous et nous (par exemple une consultation en ligne) et vous fournir les informations et services demandés ;</li>
+<li>vous informer des modifications apportées à nos services ;</li>
+<li>gérer notre Site et effectuer des opérations techniques internes (résolution de problèmes, analyse de données, tests, recherches, analyses) ;</li>
+<li>améliorer et optimiser notre Site, notamment pour nous assurer que l’affichage de nos contenus est adapté à votre appareil ;</li>
+<li>nous aider à la préservation d’un environnement sain et sécurisé sur notre Site.</li>
+</ul>
+<h2>4. Destinataires des informations et partage</h2>
+<p>Les données que nous recueillons servent essentiellement à assurer la mise en relation et l’exécution des prestations entre vous et nous. Pour des raisons techniques, nous pouvons être amenés à les partager avec des sous-traitants (prestations techniques, services de paiement, vérification d’identité, solutions analytiques).</p>
+<p>Nous ne partageons vos données avec ces tiers que lorsque cela est nécessaire, notamment pour l’exécution des contrats, la fourniture ou l’amélioration de nos services, l’hébergement ou la mesure d’audience, ou lorsque la loi nous l’impose.</p>
+<p>Les principaux tiers susceptibles d’intervenir sont&nbsp;: Jurihub (fournisseur technique du Site), OVH (hébergeur) et Google Analytics (solution de mesure d’audience).</p>
+<h2>5. Localisation des données</h2>
+<p>Nous conservons vos Données Personnelles en France uniquement.</p>
+<h2>6. Vos droits</h2>
+<p>Conformément à la réglementation applicable, vous disposez des droits suivants sur vos données&nbsp;: droit d’accès, de rectification, d’effacement, de limitation, d’opposition, droit à la portabilité, droit de définir des directives relatives au sort de vos données après votre mort, ainsi que le droit d’introduire une réclamation auprès de la CNIL.</p>
+<h2>7. Cookies et technologies semblables</h2>
+<p>Un cookie est un petit fichier texte enregistré sur le disque dur de votre terminal et déposé par les sites internet que vous visitez. Ils sont utilisés pour le bon fonctionnement du site, l’amélioration de ses performances et l’optimisation de l’ergonomie.</p>
+<p>Différents types de cookies peuvent être utilisés&nbsp;: cookies strictement nécessaires, cookies de fonctionnalité, cookies d’analyse et de performance. Vous pouvez à tout moment paramétrer votre navigateur pour refuser ou supprimer les cookies, étant précisé que certaines fonctionnalités du Site pourraient alors être dégradées.</p>
+<h2>8. Confidentialité de votre mot de passe</h2>
+<p>Vous êtes responsable de la confidentialité du mot de passe que vous avez choisi pour accéder à votre compte sur notre Site, si vous en avez créé un. Vous vous engagez à conserver ce mot de passe secret et à ne le communiquer à personne.</p>
+<h2>9. Liens vers d’autres sites</h2>
+<p>Notre Site peut occasionnellement contenir des liens vers des sites internet de partenaires ou de sociétés tierces. Ces sites disposent de leur propre politique de confidentialité et nous déclinons toute responsabilité quant à l’utilisation faite par ces sites des informations collectées lorsque vous cliquez sur ces liens.</p>
+<h2>10. Modification de la politique de confidentialité</h2>
+<p>Nous pouvons modifier occasionnellement la présente politique de confidentialité. Lorsque cela est nécessaire, nous vous en informerons et/ou solliciterons votre accord. Nous vous invitons à consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.</p>
+<h2>11. Contact</h2>
+<p>Pour toute question relative à la présente politique de confidentialité ou pour toute demande relative à vos données personnelles, vous pouvez nous contacter via le formulaire du site ou par courrier à l’adresse suivante&nbsp;: Me Sarah Temple-Boyer, Avocat exerçant 12, rue Tronchet 75008 Paris. Téléphone&nbsp;: 01 43 12 38 00.</p>
+<p>Directeur de la publication&nbsp;: Sarah Temple-Boyer, Cabinet Temple Boyer Legal, 12, rue Tronchet 75008 Paris.</p>
