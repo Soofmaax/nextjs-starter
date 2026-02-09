@@ -49,7 +49,7 @@ export default async function HomePage() {
             <div className="mt-8 h-48 overflow-hidden rounded-2xl border border-white/5 bg-slate-900/40 shadow-sm md:hidden">
               <div className="relative h-full w-full">
                 <Image
-                  src="/images/home-hero.jpg"
+                  src="/images/home-hero.svg"
                   alt=""
                   fill
                   className="object-cover"
@@ -63,7 +63,7 @@ export default async function HomePage() {
           <div className="relative hidden md:block">
             <div className="absolute inset-0">
               <Image
-                src="/images/home-hero.jpg"
+                src="/images/home-hero.svg"
                 alt=""
                 fill
                 className="h-full w-full object-cover"
