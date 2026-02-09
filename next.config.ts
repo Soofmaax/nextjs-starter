@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // On génère un site entièrement statique (HTML export) pour un hébergement simple sur Netlify.
+  // Toutes les routes sont pré-rendues au build (SSG) à partir des fichiers du dossier `migration`.
+  output: "export",
 };
 
 export default nextConfig;
