@@ -7,7 +7,7 @@
     "build": "npm run migrate:templeboyer && next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate:templeboyer": "ts-node --esm scripts/migrate-templeboyer.ts"
+    "migrate:templeboyer": "ts-node scripts/migrate-templeboyer.ts"
   },
   "dependencies": {
     "react": "19.1.0",
