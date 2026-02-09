@@ -4,14 +4,14 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-8 border-t border-slate-200/70 bg-slate-950 text-slate-100">
+    <footer className="mt-8 border-t border-[var(--border-subtle)] bg-slate-950 text-slate-100">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-3">
             <span className="text-[11px] font-medium uppercase tracking-[0.25em] text-slate-400">
               Cabinet d&apos;avocats
             </span>
-            <p className="text-lg font-semibold tracking-tight">
+            <p className="font-display text-lg font-semibold tracking-tight text-slate-50">
               Temple Boyer Legal
             </p>
             <p className="text-sm text-slate-400">
@@ -22,7 +22,7 @@ export function SiteFooter() {
             <p className="text-sm">
               <a
                 href="mailto:contact@templeboyer-legal.com"
-                className="text-slate-200 underline-offset-4 hover:text-sky-300 hover:underline"
+                className="text-slate-200 underline-offset-4 decoration-[var(--accent)] hover:text-[var(--accent-strong)] hover:underline"
               >
                 contact@templeboyer-legal.com
               </a>
@@ -34,7 +34,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/le-cabinet"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Le cabinet
                 </Link>
@@ -42,7 +42,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/competences"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Compétences
                 </Link>
@@ -50,7 +50,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/honoraires"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Honoraires
                 </Link>
@@ -58,7 +58,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/publications-actualites"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Publications &amp; actualités
                 </Link>
@@ -66,7 +66,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Contact
                 </Link>
@@ -79,7 +79,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/mentions-legales"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Mentions légales
                 </Link>
@@ -87,7 +87,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/confidentialite"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Confidentialité
                 </Link>
@@ -95,7 +95,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   href="/plan-d-acces"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-slate-50 hover:underline underline-offset-4"
                 >
                   Plan d&apos;accès
                 </Link>
@@ -104,7 +104,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-slate-800 pt-6 text-xs text-slate-500">
+        <div className="mt-8 border-t border-slate-800/80 pt-6 text-xs text-slate-500/80">
           <p>© {year} Temple Boyer Legal.</p>
         </div>
       </div>

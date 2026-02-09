@@ -26,14 +26,14 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-10">
-      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-sky-700 px-6 py-10 text-slate-50 shadow-sm sm:px-10 sm:py-12 lg:px-12 lg:py-16">
+      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900 px-6 py-10 text-slate-50 shadow-sm sm:px-10 sm:py-12 lg:px-12 lg:py-16">
         <div className="max-w-3xl space-y-4 sm:space-y-5 lg:space-y-6">
           {heroEyebrow && (
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200/90">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent-soft)]">
               {heroEyebrow}
             </p>
           )}
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
             {heroTitle}
           </h1>
           {heroSubtitle && (

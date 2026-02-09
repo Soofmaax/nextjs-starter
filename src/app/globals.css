@@ -1,21 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f4f6;
-  --foreground: #0f172a;
+  /* Light theme: warm, institutional palette */
+  --page-bg: #f6f3ee;
+  --surface-bg: #ffffff;
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --accent-soft: #f3e5cf;
+  --accent: #b48b3c;
+  --accent-strong: #8a6a2a;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+
+  /* Backwards-compatible aliases */
+  --background: var(--page-bg);
+  --foreground: var(--text-main);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--page-bg);
+  --color-foreground: var(--text-main);
+  --color-page: var(--page-bg);
+  --color-surface: var(--surface-bg);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-border-subtle: var(--border-subtle);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --page-bg: #050608;
+    --surface-bg: #111827;
+    --border-subtle: rgba(249, 250, 251, 0.16);
+    --accent-soft: #3f3014;
+    --accent: #d6b063;
+    --accent-strong: #f5d397;
+    --text-main: #f9fafb;
+    --text-muted: #e5e7eb;
+
+    --background: var(--page-bg);
+    --foreground: var(--text-main);
   }
 }
 
@@ -24,6 +50,14 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .prose {
@@ -55,6 +89,6 @@ body {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #0ea5e9;
-  outline-offset: 2px;
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
 }

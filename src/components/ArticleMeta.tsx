@@ -25,7 +25,7 @@ export function ArticleMeta({ category, date }: ArticleMetaProps) {
     <div className="mx-auto max-w-3xl">
       <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
         {category && (
-          <span className="inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-sky-800 ring-1 ring-sky-100">
+          <span className="inline-flex items-center rounded-full border border-[var(--accent)] bg-[var(--accent-soft)] px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-900">
             {category}
           </span>
         )}

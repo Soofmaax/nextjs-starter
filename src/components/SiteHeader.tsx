@@ -23,7 +23,7 @@ export function SiteHeader() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[var(--color-border-subtle)] bg-[var(--surface-bg)] backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-4">
           <Link
@@ -34,7 +34,7 @@ export function SiteHeader() {
             <span className="text-[11px] font-medium uppercase tracking-[0.25em] text-slate-500 transition-colors group-hover:text-slate-700">
               Cabinet d&apos;avocats
             </span>
-            <span className="text-lg font-semibold tracking-tight text-slate-900 transition-colors group-hover:text-slate-950">
+            <span className="font-display text-lg font-semibold tracking-tight text-slate-900 transition-colors group-hover:text-slate-950">
               Temple Boyer Legal
             </span>
           </Link>
@@ -58,7 +58,7 @@ export function SiteHeader() {
                 >
                   <span>{item.label}</span>
                   <span
-                    className={`pointer-events-none absolute inset-x-0 -bottom-0.5 block h-0.5 origin-left rounded-full bg-sky-500/80 transition-transform duration-150 ${
+                    className={`pointer-events-none absolute inset-x-0 -bottom-0.5 block h-0.5 origin-left rounded-full bg-[var(--accent)] opacity-80 transition-transform duration-150 ${
                       active ? "scale-x-100" : "scale-x-0"
                     }`}
                   />
@@ -69,7 +69,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 p-2 text-slate-700 shadow-sm transition hover:border-slate-400 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 md:hidden"
+            className="inline-flex items-center justify-center rounded-full border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] p-2 text-slate-700 shadow-sm transition hover:border-slate-400 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 md:hidden"
             aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen((open) => !open)}
@@ -103,7 +103,7 @@ export function SiteHeader() {
       </div>
 
       {isMenuOpen && (
-        <div className="border-t border-slate-200/70 bg-white/95 backdrop-blur-sm md:hidden">
+        <div className="border-t border-[var(--color-border-subtle)] bg-[var(--surface-bg)] backdrop-blur-sm md:hidden">
           <nav
             className="mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:px-8"
             aria-label="Navigation principale"
@@ -118,7 +118,7 @@ export function SiteHeader() {
                       aria-current={active ? "page" : undefined}
                       className={`flex items-center justify-between rounded-lg px-3 py-2 ${
                         active
-                          ? "bg-slate-900 text-slate-50"
+                          ? "bg-slate-900/90 text-slate-50"
                           : "hover:bg-slate-100"
                       }`}
                     >
