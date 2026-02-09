@@ -16,6 +16,8 @@ import fetch from "node-fetch";
 import fs from "node:fs/promises";
 import path from "node:path";
 
+type CheerioRoot = ReturnType<typeof cheerio.load>;
+
 const BASE_URL = "https://www.templeboyer-legal.fr" as const;
 
 const OUTPUT_ROOT = path.join(process.cwd(), "migration");
@@ -112,7 +114,17 @@ async function downloadBinary(url: string): Promise<Buffer | null> {
   return Buffer.from(arrayBuffer);
 }
 
-function extractMeta($: cheerio.CheerioAPI): {
+function extractMeta($: CheerioRoot): {
+ string): Promise<Buffer | null> {
+  await sleep(1100);
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    return null;
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  return Buffer.f</old_code><new_code>function extractMeta($: CheerioRoot): {
   title: string | null;
   metaDescription: string | null;
   h1: string | null;
