@@ -188,7 +188,9 @@ function parseDateFromHtml($: any): string | null {
   const match = text.match(/Publié\s+le\s+(\d{2}\/\d{2}\/\d{4})/i);
   if (!match) return null;
 
-  const [day, month, year] = match[1].split("/").map((value) => parseInt(value, 10));
+  const [day, month, year] = match[1]
+    .split("/")
+    .map((value: string) => parseInt(value, 10));
   if (!day || !month || !year) return null;
 
   const date = new Date(year, month - 1, day);
