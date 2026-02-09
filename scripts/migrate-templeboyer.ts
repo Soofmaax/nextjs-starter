@@ -170,11 +170,7 @@ function slugFromUrl(rawUrl: string): string | null {
     const last = segments[segments.length - 1];
     return last ?? null;
   } catch {
-    return null;
-  }
-}
-
-function parseRssPubDate(raw: string | null | undefined): string | null {
+   </old_code><new_code>function parseRssPubDate(raw: string | null | undefined): string | null {
   if (!raw) return null;
   const parsed = new Date(raw);
   if (Number.isNaN(parsed.getTime())) {
@@ -183,7 +179,20 @@ function parseRssPubDate(raw: string | null | undefined): string | null {
   return parsed.toISOString();
 }
 
-function parseDateFromHtml($: cheerio.CheerioAPI): string | null {
+function parseDateFromHtml($: CheerioRoot): string | null {
+  const text = $("body").text();
+  const match = text.match(/Publié\s+le\s+(\d{2}\/\d{2}\/\d{4})/i);
+  if (!match) return null;
+
+  const [day, month, year] = match[1].split("/").map((value) => parseInt(value, 10));
+  if (!day || !month || !year) return null;
+
+  const date = new Date(year, month - 1, day);
+  if (Number.isNaN(date.getTime())) return null;
+
+  return date.toISOString();
+}</old_code><new_code>function parseDateFromHtml($: CheerioRoot): string | null {ateFromHtml($: CheerioRoot): string | null {
+null {
   const text = $("body").text();
   const match = text.match(/Publié\s+le\s+(\d{2}\/\d{2}\/\d{4})/i);
   if (!match) return null;
@@ -577,7 +586,7 @@ async function crawlRssFeed(
     }
 
     const dateFromRss = parseRssPubDate(pubDateRaw);
-    const dateFromHtml = parseDateFromHtml($article);
+    const dateFromHtml = parseDateFromHtml($article as unknown as cheerio.CheerioAPI);
     const finalDate = dateFromRss ?? dateFromHtml ?? null;
 
     const post: MigratedPost = {
