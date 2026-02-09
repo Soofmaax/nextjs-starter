@@ -115,16 +115,6 @@ async function downloadBinary(url: string): Promise<Buffer | null> {
 }
 
 function extractMeta($: CheerioRoot): {
- string): Promise<Buffer | null> {
-  await sleep(1100);
-
-  const response = await fetch(url);
-  if (!response.ok) {
-    return null;
-  }
-
-  const arrayBuffer = await response.arrayBuffer();
-  return Buffer.f</old_code><new_code>function extractMeta($: CheerioRoot): {
   title: string | null;
   metaDescription: string | null;
   h1: string | null;
