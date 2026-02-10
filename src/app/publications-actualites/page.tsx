@@ -16,11 +16,26 @@ interface PublicationsActualitesPageProps {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
+  const title = "Publications & actualités";
+  const description = siteConfig.description;
+  const canonical = `${BASE_URL}/publications-actualites`;
+
   return {
-    title: "Publications & actualités",
-    description: siteConfig.description,
+    title,
+    description,
     alternates: {
-      canonical: `${BASE_URL}/publications-actualites`,
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }

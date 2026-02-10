@@ -11,12 +11,24 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const title = page?.title ?? "Contact";
   const description = page?.metaDescription ?? siteConfig.description;
+  const canonical = `${BASE_URL}/contact`;
 
   return {
     title,
     description,
     alternates: {
-      canonical: `${BASE_URL}/contact`,
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }
