@@ -104,7 +104,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-slate-800/80 pt-6 text-xs text-slate-500/80">
+        <div className="mt-8 border-t border-slate-800/80 pt-6 text-xs text-[var(--text-muted)]">
           <p>© {year} Temple Boyer Legal.</p>
         </div>
       </div>

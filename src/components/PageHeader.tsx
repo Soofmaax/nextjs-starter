@@ -17,7 +17,7 @@ export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
       {breadcrumb && breadcrumb.length > 0 && (
         <nav
           aria-label="Fil d'ariane"
-          className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-slate-500/80"
+          className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[var(--text-muted)]"
         >
           {breadcrumb.map((item, index) => {
             const isLast = index === breadcrumb.length - 1;
@@ -30,10 +30,10 @@ export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
             }
             return (
               <span key={item.label}>
-                <Link href={item.href} className="hover:text-slate-700">
+                <Link href={item.href} className="hover:text-slate-800">
                   {item.label}
                 </Link>
-                <span className="mx-1 text-slate-400">/</span>
+                <span className="mx-1 text-[var(--text-muted)]">/</span>
               </span>
             );
           })}
@@ -45,7 +45,7 @@ export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
             {title}
           </h1>
           {subtitle && (
-            <p className="max-w-2xl text-sm text-slate-600 sm:text-base">
+            <p className="max-w-2xl text-sm text-[var(--text-muted)] sm:text-base">
               {subtitle}
             </p>
           )}

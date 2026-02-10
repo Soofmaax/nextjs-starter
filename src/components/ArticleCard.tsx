@@ -25,14 +25,14 @@ export function ArticleCard({ href, title, date, category, excerpt }: ArticleCar
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] p-5 shadow-sm transition-all duration-150 hover:border-[var(--accent-soft)] hover:shadow-md focus-within:border-[var(--accent-soft)] focus-within:shadow-md">
       <div className="flex h-full flex-col gap-3">
-        <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
+        <div className="flex items-center justify-between gap-2 text-xs text-[var(--text-muted)]">
           {category && (
             <span className="inline-flex items-center rounded-full border border-[var(--accent)] bg-[var(--accent-soft)] px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-900">
               {category}
             </span>
           )}
           {formattedDate && (
-            <time dateTime={date ?? undefined} className="text-xs text-slate-500">
+            <time dateTime={date ?? undefined} className="text-xs text-[var(--text-muted)]">
               {formattedDate}
             </time>
           )}
@@ -41,7 +41,7 @@ export function ArticleCard({ href, title, date, category, excerpt }: ArticleCar
           <Link href={href}>{title}</Link>
         </h2>
         {excerpt && (
-          <p className="text-sm leading-relaxed text-slate-600 line-clamp-3">
+          <p className="text-sm leading-relaxed text-[var(--text-muted)] line-clamp-3">
             {excerpt}
           </p>
         )}
