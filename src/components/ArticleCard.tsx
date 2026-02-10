@@ -1,0 +1,51 @@
+import Link from "next/link";
+
+interface ArticleCardProps {
+  href: string;
+  title: string;
+  date?: string | null;
+  category?: string | null;
+  excerpt?: string | null;
+}
+
+function formatDate(date: string | null | undefined): string | null {
+  if (!date) return null;
+  const parsed = new Date(date);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return parsed.toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
+  });
+}
+
+export function ArticleCard({ href, title, date, category, excerpt }: ArticleCardProps) {
+  const formattedDate = formatDate(date);
+
+  return (
+    <article className="group relative overflow-hidden rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] p-5 shadow-sm transition-all duration-150 hover:border-[var(--accent-soft)] hover:shadow-md focus-within:border-[var(--accent-soft)] focus-within:shadow-md">
+      <div className="flex h-full flex-col gap-3">
+        <div className="flex items-center justify-between gap-2 text-xs text-[var(--text-muted)]">
+          {category && (
+            <span className="inline-flex items-center rounded-full border border-[var(--accent)] bg-[var(--accent-soft)] px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-900">
+              {category}
+            </span>
+          )}
+          {formattedDate && (
+            <time dateTime={date ?? undefined} className="text-xs text-[var(--text-muted)]">
+              {formattedDate}
+            </time>
+          )}
+        </div>
+        <h2 className="text-base font-semibold tracking-tight text-slate-900 group-hover:text-slate-950">
+          <Link href={href}>{title}</Link>
+        </h2>
+        {excerpt && (
+          <p className="text-sm leading-relaxed text-[var(--text-muted)] line-clamp-3">
+            {excerpt}
+          </p>
+        )}
+      </div>
+    </article>
+  );
+}

@@ -1,0 +1,56 @@
+import Link from "next/link";
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface PageHeaderProps {
+  title: string;
+  subtitle?: string | null;
+  breadcrumb?: BreadcrumbItem[];
+}
+
+export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
+  return (
+    <header className="mb-10 sm:mb-12">
+      {breadcrumb && breadcrumb.length > 0 && (
+        <nav
+          aria-label="Fil d'ariane"
+          className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[var(--text-muted)]"
+        >
+          {breadcrumb.map((item, index) => {
+            const isLast = index === breadcrumb.length - 1;
+            if (isLast || !item.href) {
+              return (
+                <span key={item.label} className="opacity-80">
+                  {item.label}
+                </span>
+              );
+            }
+            return (
+              <span key={item.label}>
+                <Link href={item.href} className="hover:text-slate-800">
+                  {item.label}
+                </Link>
+                <span className="mx-1 text-[var(--text-muted)]">/</span>
+              </span>
+            );
+          })}
+        </nav>
+      )}
+      <div className="rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--surface-bg)] px-4 py-5 shadow-sm sm:px-6 sm:py-6">
+        <div className="space-y-2">
+          <h1 className="font-display text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="max-w-2xl text-sm text-[var(--text-muted)] sm:text-base">
+              {subtitle}
+            </p>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+}

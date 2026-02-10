@@ -1,0 +1,24 @@
+---
+slug: honoraires
+url: /honoraires
+type: page
+title: Honoraires
+metaDescription: Les honoraires du cabinet Temple Boyer Legal sont fixés en toute transparence avec le client, après acceptation d'un devis, conformément aux règles déontologiques de la profession d'avocat.
+h1: Honoraires
+---
+
+<p>Les honoraires du cabinet Temple Boyer Legal sont fixés en toute transparence avec le client, après acceptation de notre devis par celui-ci, conformément aux règles déontologiques de la profession d’avocat.</p>
+<p>Dès le premier rendez-vous téléphonique ou physique (gratuit) et après étude préliminaire du dossier, le cabinet Temple Boyer Legal proposera au client, si le type de dossier s'y prête, un choix entre plusieurs formules de facturation, en s’attachant à promouvoir la formule d’honoraires la plus avantageuse pour le client.</p>
+<p>Pour préciser les modalités de fixation des honoraires, une convention d’honoraires sera passée entre le cabinet Temple Boyer Legal et le client. Peuvent être proposées 3 formules&nbsp;:</p>
+<h2>Les honoraires au temps passé</h2>
+<p>Les honoraires seront, par principe, basés sur l'équation suivante&nbsp;: nombre d’heures consacrées au traitement du dossier multiplié par le taux horaire.</p>
+<p>Ce taux horaire sera déterminé, au cas par cas, en fonction de la nature et de la complexité des tâches à accomplir et variera généralement entre 200 et 350 euros HT de l'heure. À toutes fins utiles, il est précisé que cette fourchette indicative ne s'applique qu'à des prestations ayant une valeur ajoutée certaine (telles que notamment&nbsp;: consultations juridiques, analyse juridique d'une situation pour en mesurer les risques et préconisations corrélatives, appréciation stratégique dans le cadre d'un précontentieux ou d'un contentieux, rédaction de contrats et d'actes de procédure, audiences de plaidoiries...).</p>
+<p>Pour les tâches de moindre valeur ajoutée mais qui sont pourtant indispensables à la conduite des missions qui nous sont confiées (telles que notamment&nbsp;: recherches documentaires, temps de déplacement aux audiences, interface téléphonique avec les autorités ou juridictions impliquées...), le Cabinet Temple Boyer Legal considère justifié de pratiquer un taux horaire moins élevé qui sera, dès lors, appliqué aux prestations de cette nature.</p>
+<p>Au moment d'établir le devis et sur la base des informations qui lui seront fournies, le Cabinet Temple Boyer Legal détaillera, dans toute la mesure du possible, les coûts anticipés par type de prestations envisagées pour mener à bien la mission confiée.</p>
+<h2>L’honoraire au forfait</h2>
+<p>Cette formule est généralement utilisée dans le cas où il n’existe que peu d’aléa concernant le déroulement de la procédure, permettant donc au cabinet de convenir avec son client d’un montant forfaitaire pour l’ensemble du traitement du dossier.</p>
+<h2>Les honoraires au résultat</h2>
+<p>L'honoraire de résultat se calcule sur un résultat, c'est-à-dire sur le gain, l'économie ou l'avantage procuré au client. C’est un complément de rémunération qui s'ajoute à l'honoraire au temps passé ou à l'honoraire forfaitaire mais qui ne peut être le seul mode de rémunération. Un honoraire de résultat est bien entendu dû seulement dans le cas où le client et l'avocat l’ont préalablement convenu par une convention écrite.</p>
+<h2>Protection juridique et remboursement des honoraires</h2>
+<p>Si vous bénéficiez d’une assurance protection juridique dans le cadre d’un contrat d’assurance, les honoraires du Cabinet de Maître Sarah Temple peuvent être pris en charge, partiellement ou intégralement, par votre compagnie d’assurance. Malgré cette prise en charge financière, le client demeure libre de choisir son avocat.</p>
+<p>Suite à un contentieux en justice, le juge peut décider de condamner la partie adverse à vous indemniser pour les honoraires payés et les frais engagés lors de la procédure. En matière civile, cette indemnisation est prévue par l'article 700 du Code de procédure civile et en matière pénale, par l'article 475-1 du code de procédure pénale.</p>

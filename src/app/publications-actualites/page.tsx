@@ -1,0 +1,97 @@
+import type { Metadata } from "next";
+import { BASE_URL, siteConfig } from "@/config/site";
+import { getPostsIndex } from "@/lib/content";
+import { PageHeader } from "@/components/PageHeader";
+import { ArticleCard } from "@/components/ArticleCard";
+import { Pagination } from "@/components/Pagination";
+
+export const dynamic = "force-static";
+
+type PublicationsSearchParams = {
+  page?: string;
+};
+
+interface PublicationsActualitesPageProps {
+  searchParams?: Promise<PublicationsSearchParams>;
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "Publications & actualités";
+  const description = siteConfig.description;
+  const canonical = `${BASE_URL}/publications-actualites`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
+
+export default async function PublicationsActualitesPage({
+  searchParams,
+}: PublicationsActualitesPageProps) {
+  const resolvedSearchParams = searchParams ? await searchParams : undefined;
+  const pageParam = resolvedSearchParams?.page;
+  const page = Number(pageParam) > 1 ? Number(pageParam) : 1;
+  const pageSize = 10;
+
+  const posts = await getPostsIndex();
+  const total = posts.length;
+
+  const start = (page - 1) * pageSize;
+  const end = start + pageSize;
+  const slice = posts.slice(start, end);
+
+  return (
+    <div className="space-y-10 sm:space-y-12">
+      <PageHeader
+        title="Publications & actualités"
+        subtitle={null}
+        breadcrumb={[
+          { label: "Accueil", href: "/" },
+          { label: "Publications & actualités" },
+        ]}
+      />
+
+      {slice.length === 0 ? (
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm text-slate-600">Contenu en cours de migration.</p>
+        </div>
+      ) : (
+        <div className="mx-auto max-w-4xl space-y-6 sm:space-y-8">
+          <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
+            {slice.map((post) => (
+              <ArticleCard
+                key={post.slug}
+                href={`/${post.slug}`}
+                title={post.title ?? post.slug}
+                date={post.date}
+                category={post.category}
+                excerpt={post.metaDescription}
+              />
+            ))}
+          </div>
+          <Pagination
+            page={page}
+            pageSize={pageSize}
+            total={total}
+            basePath="/publications-actualites"
+          />
+        </div>
+      )}
+    </div>
+  );
+}
